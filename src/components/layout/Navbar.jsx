@@ -14,6 +14,8 @@ import { useThemeStore } from "../../store/themeStore";
 import { useCartStore } from "../../store/cartStore";
 import { useAuthStore } from "../../store/authStore";
 
+import logo from "../../assets/logo.svg";
+
 const navLinks = [
   { label: "Home", path: "/" },
   { label: "Shop", path: "/shop" },
@@ -70,7 +72,7 @@ export function Navbar() {
             {/* Logo */}
             <Link to="/" className="flex items-center gap-2 flex-shrink-0">
               <img
-                src="/public/logo.svg"
+                src={logo}
                 alt="Lumière Logo"
                 className="rounded-md size-8 object-cover"
               />
